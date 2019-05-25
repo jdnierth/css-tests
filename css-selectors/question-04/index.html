@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 04</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    [class^="widget"] {
+        background-color: #ff705855;
+        border: 2px solid black;
+        padding: 10px;
+    }
+</style>
+
+<body>
+<h1>Which section does the following CSS declaration target?</h1>
+<div class="row">
+<div class="col-6">
+    <h2>CSS declaration</h2>
+
+    <pre>
+    <code>
+        [class^="widget"] {…}
+    </code>
+</pre>
+</div>
+<div class="col-6">
+    <h2>HTML markup</h2>
+    <pre class="preview">
+    <code>
+        <header>
+            <h1>...</h1>
+            <p class="intro">...</p>
+        </header>
+
+        <main>
+            <section id="section1">
+                <h2>...</h2>
+                <p>...</p>
+                <p>...</p>
+            </section>
+            <p class="out"></p>
+        </main>
+
+        <footer>
+            <div class="widget widget1">
+                <p>...</p>
+            </div>
+            <div class="widget widget2">
+                <div>...</div>
+            </div>
+            <div class="widget widget3">
+                <div class="out">...</div>
+            </div>
+        </footer>
+    </code>
+</pre>
+</div>
+</div>
+<h1>Solution</h1>
+
+<header>
+    <h1>header h1</h1>
+    <p class="intro">header p.intro</p>
+</header>
+
+<main>
+    <section id="section1">
+        <h2>main section#section1 h2</h2>
+        <p>main section#section1 p</p>
+        <p>main section#section1 p</p>
+    </section>
+    <p class="out">main section#section1 p.out</p>
+</main>
+
+<footer>
+    <div class="widget widget1">
+        <p>footer div widget1 p</p>
+    </div>
+    <div class="widget widget2">
+        <div>footer widget2 div</div>
+    </div>
+    <div class="widget widget3">
+        <div class="out">footer widget3 div.out</div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
