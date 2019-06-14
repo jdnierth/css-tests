@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<style>
+    ul li:nth-child(-n+3) {
+        background-color: #ff705855;
+        border: 2px solid black;
+        padding: 10px;
+    }
+	
+	li {
+		list-style-type: none;
+	}
+</style>
+
+<body>
+<h1>Which section does the following CSS declaration target?</h1>
+<div class="row">
+<div class="col-6">
+    <h2>CSS declaration</h2>
+
+    <pre>
+        <code>
+            ul :nth-child(-n+3) { ... }
+        </code>
+    </pre>
+</div>
+<div class="col-6">
+    <h2>HTML markup</h2>
+    <pre class="preview">
+    <code>
+         <main>
+            <ul>
+				<li>List 1</li>
+				<li>List 2</li>
+				<li>List 3</li>
+				<li>List 4</li>
+				<li>List 5</li>
+				<li>List 6</li>
+			</ul>
+        </main>
+
+        <footer>
+               <ul>
+				<li>List 1</li>
+				<li>List 2</li>
+				<li>List 3</li>
+				<li>List 4</li>
+				<li>List 5</li>
+				<li>List 6</li>
+			</ul>
+        </footer>
+    </code>
+</pre>
+</div>
+</div>
+<h1>Solution</h1>
+
+<main>
+	<ul>
+		<li>List 1</li>
+		<li>List 2</li>
+		<li>List 3</li>
+		<li>List 4</li>
+		<li>List 5</li>
+		<li>List 6</li>
+	</ul>
+</main>
+
+<footer>
+	   <ul>
+		<li>List 1</li>
+		<li>List 2</li>
+		<li>List 3</li>
+		<li>List 4</li>
+		<li>List 5</li>
+		<li>List 6</li>
+	</ul>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
